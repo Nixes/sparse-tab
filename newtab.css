@@ -2,6 +2,8 @@ body {
     background: rgb(53, 54, 58);
     height: 100%;
     width: 100%;
+    margin: 0;
+    display: block;
 }
 
 body * {
@@ -24,10 +26,20 @@ body * {
     outline: none;
 }
 
+#links {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 400px;
+}
 
 .link {
-    padding: 10px;
+    margin: 0;
+    margin-bottom: 3px;
 }
+
 .link a {
+    display: block;
     color: white;
+    padding: 10px;
+    border: 1px solid white;
 }
