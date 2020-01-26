@@ -1,3 +1,5 @@
+'use strict';
+
 class Link {
     /**
      * @var {string} title
@@ -47,6 +49,9 @@ class LinkManager {
         this.setLinks(links);
     }
 
+    /**
+     * @param {Link[]} links
+     */
     setLinks(links) {
         this.links = links;
         this.#render();
@@ -57,7 +62,7 @@ class LinkManager {
      */
     #renderLink = (link) => {
         let htmlString = `<div class="link">
-            <a href="${link.url}">${link.title}</a>
+            <a href="${link.url}"><img class="link-icon" src="${link.icon}"> ${link.title}</a>
         </div>`;
         return htmlString;
     };
@@ -73,8 +78,14 @@ class LinkManager {
     }
 }
 
-// // mozilla and chrome have different namespaces for webextentions, WTF?
-// const browser = chrome === null? browser : chrome;
+/**
+ * not cross browser, this only works for chrome right now
+ * @param {string} url
+ * @returns {string}
+ */
+const getFaviconImageSrc = (url) => {
+    return `chrome://favicon/size/48/${url}`;
+};
 
 window.onload = async () => {
     /**
@@ -82,10 +93,8 @@ window.onload = async () => {
      */
     const topSites = await browser.topSites.get();
     const links = topSites.map((topSite)=>{
-        return new Link(topSite.title,topSite.url,'');
+        return new Link(topSite.title,topSite.url,getFaviconImageSrc(topSite.url));
     });
-    console.log("Topsites: ");
-    console.log(topSites);
     const linksElement = document.getElementById('links');
     const linkManager = new LinkManager(linksElement,links);
 };
