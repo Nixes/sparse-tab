@@ -1,0 +1,28 @@
+{
+  "name": "Sparse Tab",
+  "version": "1.0",
+  "description": "A new tab page for chrome with no bullshit, just your top pages.",
+  "permissions": [
+    "bookmarks",
+    "chrome://favicon/",
+    "topSites",
+    "management",
+    "tabs",
+    "fontSettings",
+    "sessions"
+  ],
+  "chrome_url_overrides":
+  {
+    "newtab": "newtab.html"
+  },
+  "options_page": "newtab.html?options",
+  "options_ui": {
+    "page": "newtab.html?options",
+    "chrome_style": false,
+    "open_in_tab": true
+  },
+  "web_accessible_resources": [
+    "newtab.html"
+  ],
+  "manifest_version": 2
+}

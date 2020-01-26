@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New tab</title>
+    <script src="newtab.js"></script>
+    <script src="node_modules/webextension-polyfill/dist/browser-polyfill.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="newtab.css">
+<!-- look at  chrome-search://most-visited/single.js  -->
+</head>
+<body class="dark-theme use-white-add-icon win"
+      style="--tile-title-color:rgba(248,249,250,1); --icon-background-color:rgba(32,33,36,1);">
+<div id="links">
+    <div id="most-visited">
+        <div id="mv-tiles" style="width: 560px; opacity: 1;">
+            <div class="grid-tile-container" rid="1" add="false" index="0" style="transform: translate(0px, 0px);">
+                <div class="grid-tile" draggable="true"><a class="md-tile" data-rid="1" data-pos="0"
+                                                           href="https://www.ozbargain.com.au/" aria-label="Ozbargain"
+                                                           title="Ozbargain" draggable="false">
+                    <div class="md-tile-inner"><img class="md-icon" title="" alt=""
+                                                    src="chrome-search://ntpicon/?size=24%401x&amp;url=https%3A%2F%2Fwww.ozbargain.com.au%2F">
+                        <div class="md-title" style="direction: ltr;"><span>Ozbargain</span></div>
+                    </div>
+                    <button class="md-menu md-edit-menu" title="Edit shortcut"
+                            aria-label="Edit shortcut Ozbargain"></button>
+                </a></div>
+            </div>
+            <div class="grid-tile-container" rid="2" add="false" index="1" style="transform: translate(112px, 0px);">
+                <div class="grid-tile" draggable="true"><a class="md-tile" data-rid="2" data-pos="1"
+                                                           href="https://see-bry.com:4001/" aria-label="list"
+                                                           title="list" draggable="false">
+                    <div class="md-tile-inner"><img class="md-icon" title="" alt=""
+                                                    src="chrome-search://ntpicon/?size=24%401x&amp;url=https%3A%2F%2Fsee-bry.com%3A4001%2F">
+                        <div class="md-title" style="direction: ltr;"><span>list</span></div>
+                    </div>
+                    <button class="md-menu md-edit-menu" title="Edit shortcut" aria-label="Edit shortcut list"></button>
+                </a></div>
+            </div>
+            <div class="grid-tile-container" rid="3" add="false" index="2" style="transform: translate(224px, 0px);">
+                <div class="grid-tile" draggable="true"><a class="md-tile" data-rid="3" data-pos="2"
+                                                           href="https://secure.selfwealth.com.au/Account/Login?ReturnUrl=%2F"
+                                                           aria-label="Login to your Account - SelfWealth"
+                                                           title="Login to your Account - SelfWealth" draggable="false">
+                    <div class="md-tile-inner"><img class="md-icon" title="" alt=""
+                                                    src="chrome-search://ntpicon/?size=24%401x&amp;url=https%3A%2F%2Fsecure.selfwealth.com.au%2FAccount%2FLogin%3FReturnUrl%3D%252F">
+                        <div class="md-title" style="direction: ltr;"><span>Login to your Account - SelfWealth</span>
+                        </div>
+                    </div>
+                    <button class="md-menu md-edit-menu" title="Edit shortcut"
+                            aria-label="Edit shortcut Login to your Account - SelfWealth"></button>
+                </a></div>
+            </div>
+            <div class="grid-tile-container" rid="4" add="false" index="3" style="transform: translate(336px, 0px);">
+                <div class="grid-tile" draggable="true"><a class="md-tile" data-rid="4" data-pos="3"
+                                                           href="http://fitgirl-repacks.site/"
+                                                           aria-label="FitGirl Repacks" title="FitGirl Repacks"
+                                                           draggable="false">
+                    <div class="md-tile-inner"><img class="md-icon" title="" alt=""
+                                                    src="chrome-search://ntpicon/?size=24%401x&amp;url=http%3A%2F%2Ffitgirl-repacks.site%2F">
+                        <div class="md-title" style="direction: ltr;"><span>FitGirl Repacks</span></div>
+                    </div>
+                    <button class="md-menu md-edit-menu" title="Edit shortcut"
+                            aria-label="Edit shortcut FitGirl Repacks"></button>
+                </a></div>
+            </div>
+            <div class="grid-tile-container" rid="-1" add="true" style="transform: translate(448px, 0px);">
+                <div class="grid-tile"><a class="md-tile" data-rid="-1" data-pos="4" aria-label="Add shortcut"
+                                          title="Add shortcut" tabindex="0">
+                    <div class="md-tile-inner">
+                        <div class="md-icon md-add-icon"></div>
+                        <div class="md-title" style="direction: ltr;"><span>Add shortcut</span></div>
+                    </div>
+                </a></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
