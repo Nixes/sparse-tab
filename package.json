@@ -1,0 +1,24 @@
+{
+  "name": "sparse-tab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "newtab.js",
+  "dependencies": {
+    "fast-average-color": "^6.0.1",
+    "webextension-polyfill": "^0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nixes/sparse-tab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nixes/sparse-tab/issues"
+  },
+  "homepage": "https://github.com/Nixes/sparse-tab#readme"
+}
