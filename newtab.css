@@ -43,15 +43,26 @@ body * {
 .link a {
     opacity: 0.8;
     display: block;
-    color: black;
-    padding: 10px;
-    border: 1px solid white;
     width: 100px;
     height: 100px;
-    overflow: hidden;
     text-decoration: none;
+}
+
+.link-text {
+    text-overflow: ellipsis;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.link-icon-container {
+    padding: 10px;
+    border: 1px solid white;
     background: white;
     border-radius: 5px;
+    margin: 0 auto;
+    width: 30px;
 }
 
 .link a:hover {
@@ -59,8 +70,8 @@ body * {
 }
 
 .link-icon {
-    width: 48px;
-    height:48px;
+    width: 30px;
+    height:30px;
     margin: 0 auto;
     display:block;
 }
