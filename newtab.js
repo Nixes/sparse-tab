@@ -62,7 +62,10 @@ class LinkManager {
      */
     #renderLink = (link) => {
         let htmlString = `<div class="link">
-            <a href="${link.url}"><img class="link-icon" src="${link.icon}"> ${link.title}</a>
+            <a href="${link.url}">
+                <div class="link-icon-container"><img class="link-icon" src="${link.icon}"></div> 
+                <p class="link-text">${link.title}</p>
+            </a>
         </div>`;
         return htmlString;
     };
