@@ -22,3 +22,5 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+Maybe more deployment inspiration: https://github.com/stateful/web-extension-starter-kit/blob/main/package.json

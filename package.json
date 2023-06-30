@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service build --mode development --watch",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "bundle:chrome:crx": "crx pack ./dist -o ./dist/sparse-tab.crx"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "crx": "^5.0.1",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
