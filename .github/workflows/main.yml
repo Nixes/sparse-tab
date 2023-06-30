@@ -27,7 +27,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           # Artifact name
-          name: sparse-tab
+          name: sparse-tab.crx
           # A file, directory or wildcard pattern that describes what to upload
           path: dist/sparse-tab.crx
           # The desired behavior if no files are found using the provided path.
