@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Sparse Tab",
   "homepage_url": "http://localhost:8080/",
   "description": "A new tab page for chrome with no bullshit, just your top pages.",
