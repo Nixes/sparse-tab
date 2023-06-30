@@ -12,12 +12,6 @@ module.exports = defineConfig({
       entry: './src/override/main.js',
       title: 'Override'
     },
-    standalone: {
-      template: 'public/browser-extension.html',
-      entry: './src/standalone/main.js',
-      title: 'Standalone',
-      filename: 'index.html'
-    }
   },
   pluginOptions: {
     browserExtension: {
