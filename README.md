@@ -1,8 +1,26 @@
 # sparse-tab
-Simple new tab page with a locked down feature set, no feature creep here.
 
-Target Featureset:
-  - Show top sites with links going to each site.
-  - Allow renaming sites.
-  - Allow manually adding a site.
-  - Allow manually removing a site.
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+Maybe more deployment inspiration: https://github.com/stateful/web-extension-starter-kit/blob/main/package.json

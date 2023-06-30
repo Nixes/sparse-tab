@@ -1,6 +1,7 @@
 {
+  "manifest_version": 2,
   "name": "Sparse Tab",
-  "version": "1.0",
+  "homepage_url": "http://localhost:8080/",
   "description": "A new tab page for chrome with no bullshit, just your top pages.",
   "permissions": [
     "bookmarks",
@@ -11,18 +12,16 @@
     "fontSettings",
     "sessions"
   ],
-  "chrome_url_overrides":
-  {
-    "newtab": "newtab.html"
+  "icons": {
   },
-  "options_page": "newtab.html?options",
+  "browser_action": {
+    "default_title": "__MSG_extName__"
+  },
   "options_ui": {
-    "page": "newtab.html?options",
-    "chrome_style": false,
-    "open_in_tab": true
+    "page": "options.html",
+    "browser_style": true
   },
-  "web_accessible_resources": [
-    "newtab.html"
-  ],
-  "manifest_version": 2
+  "chrome_url_overrides": {
+    "newtab": "override.html"
+  }
 }
