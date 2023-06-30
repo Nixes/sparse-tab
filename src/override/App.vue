@@ -1,13 +1,12 @@
 <template>
-  <hello-world />
-  <h1>This is a test new tab page</h1>
+  <new-tab></new-tab>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import NewTab from "@/components/NewTab";
 
 export default {
   name: 'App',
-  components: { HelloWorld }
+  components: {NewTab }
 }
 </script>

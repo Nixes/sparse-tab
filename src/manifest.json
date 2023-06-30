@@ -2,11 +2,16 @@
   "manifest_version": 2,
   "name": "__MSG_extName__",
   "homepage_url": "http://localhost:8080/",
-  "description": "A Vue Browser Extension",
+  "description": "A new tab page for chrome with no bullshit, just your top pages.",
   "default_locale": "en",
   "permissions": [
-    "<all_urls>",
-    "*://*/*"
+    "bookmarks",
+    "chrome://favicon/",
+    "topSites",
+    "management",
+    "tabs",
+    "fontSettings",
+    "sessions"
   ],
   "icons": {
     "16": "icons/16.png",
@@ -24,6 +29,9 @@
     "page": "options.html",
     "browser_style": true
   },
+  "web_accessible_resources": [
+    "options.html"
+  ],
   "chrome_url_overrides": {
     "newtab": "override.html"
   }
