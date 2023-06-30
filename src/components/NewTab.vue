@@ -24,11 +24,8 @@ export default {
     this.links = await this.getLinks();
   },
   methods: {
-    getFaviconImageSrc (u) {
-      const url = new URL(chrome.runtime.getURL("/_favicon/"));
-      url.searchParams.set("pageUrl", u);
-      url.searchParams.set("size", "32");
-      return url.toString();
+    getFaviconImageSrc (url) {
+      return `chrome://favicon/size/48/${url}`;
     },
     async getLinks () {
       const topSites = await browser.topSites.get();
@@ -48,7 +45,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 body {
   background: rgb(53, 54, 58);
   height: 100%;
