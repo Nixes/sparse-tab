@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Sparse Tab",
   "homepage_url": "http://localhost:8080/",
   "description": "A new tab page for chrome with no bullshit, just your top pages.",
@@ -10,7 +10,8 @@
     "management",
     "tabs",
     "fontSettings",
-    "sessions"
+    "sessions",
+    "favicon"
   ],
   "icons": {
   },
@@ -22,6 +23,11 @@
     "browser_style": true
   },
   "web_accessible_resources": [
+    {
+      "resources": ["_favicon/*"],
+      "matches": ["<all_urls>"],
+      "extension_ids": ["*"]
+    },
     "options.html"
   ],
   "chrome_url_overrides": {
