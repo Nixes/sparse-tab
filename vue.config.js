@@ -37,7 +37,7 @@ module.exports = {
         config.module
             .rule('images')
             .use('url-loader')
-            .tap(args => {
+            .tap(() => {
                 // 日, 这里不应该放数组
                 return {
                     limit: 4096,
