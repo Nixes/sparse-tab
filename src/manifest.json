@@ -10,7 +10,8 @@
     "management",
     "tabs",
     "fontSettings",
-    "sessions"
+    "sessions",
+    "storage"
   ],
   "icons": {
   },

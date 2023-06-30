@@ -17,18 +17,28 @@ export default {
   components: {LinkComponent},
   data () {
     return {
+      numberBookmarks: 0,
       links: []
     }
   },
   async mounted () {
+    this.numberBookmarks = await this.getBookmarkCount();
     this.links = await this.getLinks();
   },
   methods: {
+    async getBookmarkCount() {
+      let {numberBookmarks} = await browser.storage.local.get();
+      if (!numberBookmarks) {
+        numberBookmarks = 5
+        await browser.storage.local.set({numberBookmarks: numberBookmarks})
+      }
+      return numberBookmarks;
+    },
     getFaviconImageSrc (url) {
       return `chrome://favicon/size/48/${url}`;
     },
     async getLinks () {
-      const topSites = await browser.topSites.get();
+      const topSites = (await browser.topSites.get()).slice(0, this.numberBookmarks);
       const links = topSites.map((topSite)=>{
         return {
           url: topSite.url,
